@@ -5,3 +5,12 @@
 5. a标签的href属性写入网址，要加入协议。
 6. img标签的图片地址，必须和index.html处于相同文件夹。
 7. 使用 bootcdn查询到最新的 jQuery链接并引用。
+8. 在页面准备重新加载并关闭当前页面前，可以用onbeforeunload监听。
+9. 善用json对象的api。  
+   json.stringify       json.parse
+10. 开发者工具的application中查看localstorage
+11. 刷新页面是先关闭当前页面，在重新请求http打开
+12. localstorage专用于存储某个指定页面的数据到本地，且除非用户手动清除，或采用无痕模式，否则一般不会存在找不到的风险。
+13. localstorage中数据以对象形式存储：
+    使用API setItem与getItem。
+14. 

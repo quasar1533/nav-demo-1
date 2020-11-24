@@ -1,4 +1,4 @@
-/* css reset */
+/* reset css */
 * {
   box-sizing: border-box;
 }
@@ -23,30 +23,30 @@ img {
   max-height: 100%;
 }
 
-
+/* demo css */
 body {
   background: #eee; /* body的背景色会蔓延整个页面 */
 }
 .global-header {
   margin: 20px;
 }
-.global-header .search-form {
+.global-header .search-bar {
   display: flex;
   justify-content: space-between;
 }
-.global-header > .search-form > input{
+.global-header > .search-bar > input {
   width: 100%;
   border: 1px solid #ddd;
   height: 40px;
   border-radius: 4px;
-  padding-left: 10px;
+  padding-left: 10px; /* 给输入框内加padding */
 }
-.global-header > .search-form > button{
+.global-header > .search-bar > button {
   white-space: nowrap;
   margin-left: 10px;
   padding: 0 20px;
-  border: none;
-  background: #2189BC;
+  border: none; /* 取消默认的黑框 */
+  background: #2189bc;
   color: white;
   height: 40px;
   font-size: 16px;
@@ -68,6 +68,7 @@ body {
   margin-bottom: 15px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  position: relative;
 }
 .site-list .site .logo {
   width: 64px;
@@ -81,13 +82,72 @@ body {
   font-size: 14px;
   margin-top: 5px;
 }
+.site-list .site .close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 20px;
+}
 .add-button {
   height: 122px;
 }
-.site-list .site .icon{
+.site-list .site .icon {
   height: 64px;
   width: 64px;
 }
-.site-list .site .text{
+.site-list .site .icon2 {
+  height: 20px;
+  width: 20px;
+}
+.site-list .site .text {
   margin-top: 4px;
+}
+
+@media (min-width: 500px) {
+  .search-bar {
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .global-header {
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
+  .global-main {
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .site-list {
+    margin: 0;
+    margin-right: -25px;
+    justify-content: flex-start;
+  }
+  .site-list .wrapper {
+    margin-right: 25px;
+  }
+  .site-list .site {
+    cursor: pointer;
+  }
+  .site-list .site:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 26px 40px -24px rgba(0, 36, 100, 0.3);
+    transition: all 0.3s ease;
+  }
+  .site-list .add-button:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  /* trick */
+  .site-list .site .close {
+    display: none;
+  }
+  .site-list .site:hover > .close {
+    display: block;
+  }
+  /* 添加鼠标悬浮样式的trick */
+  .site-list .site:hover > .close:hover {
+    background: #cdcdcd;
+    transition: ease 0.4s;
+  }
 }

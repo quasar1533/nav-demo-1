@@ -12,5 +12,6 @@
 11. 刷新页面是先关闭当前页面，在重新请求http打开
 12. localstorage专用于存储某个指定页面的数据到本地，且除非用户手动清除，或采用无痕模式，否则一般不会存在找不到的风险。
 13. localstorage中数据以对象形式存储：
-    使用API setItem与getItem。
-14. 
+    使用API setItem与getItem。  API的参数都是字符串形式。
+14. css可以改变文本大小写，使用text-transform: uppercase。
+15. 媒体查询判断设备 500px 是一个较合适的数值。

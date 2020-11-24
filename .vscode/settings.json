@@ -6,6 +6,7 @@
     "localstorage",
     "onbeforeload",
     "onbeforeunload",
-    "wangdoc"
+    "wangdoc",
+    "xlink"
   ]
 }

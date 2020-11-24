@@ -2,7 +2,7 @@
   "scripts": {
     "build": "rm -rf && parcel build src/index.html --no-minify --public-url ./"
   },
-  "name": "前端导航网站-demo",
+  "name": "nav-demo",
   "version": "1.0.0",
   "main": "index.js",
   "author": "quasar1533 <1029230641@qq.com>",
